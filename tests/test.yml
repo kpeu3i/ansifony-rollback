@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: false
+  roles:
+    - kpeu3i.ansifony-rollback
+
+  vars:
+    ansistrano_deploy_to: /tmp/test_app

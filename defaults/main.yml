@@ -1,0 +1,13 @@
+---
+ansifony_tasks_path: "../../kpeu3i.ansifony-rollback/tasks"
+
+ansifony_remote_user: "root"
+ansifony_deploy_user: "www-data"
+
+ansifony_php_path: "php"
+
+ansifony_symfony_env: prod
+ansifony_symfony_console_command: "app/console"
+
+ansifony_nginx_restart: True
+ansifony_php5_fpm_restart: True

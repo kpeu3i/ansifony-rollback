@@ -1,0 +1,14 @@
+---
+- name: "ANSIFONY | php-fpm: restart"
+  service: name=php5-fpm state=restarted
+  become: yes
+  become_method: sudo
+  become_user: "{{ ansifony_remote_user }}"
+  when: ansifony_php5_fpm_restart
+
+- name: "ANSIFONY | nginx: restart"
+  service: name=nginx state=reloaded
+  become: yes
+  become_method: sudo
+  become_user: "{{ ansifony_remote_user }}"
+  when: ansifony_nginx_restart
